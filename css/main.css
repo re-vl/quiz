@@ -1,0 +1,308 @@
+@media (max-width: 500px) {
+   #u5454 {
+      border: 2px black solid !important;
+   }
+}
+
+@media (max-width: 450px) {
+   #u5454 {
+      border: 2px red solid !important;
+   }
+}
+
+@media (max-width: 600px) {
+   .b2 {
+      width: 100% !important;
+   }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* медиа запросы КОНЕЦ */
+
+.title-blue {
+   color: #2289ff;
+}
+
+.menu-fix {
+   box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
+   z-index: 99 !important;
+   background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.color1 {
+   font-size: 12px !important;
+}
+
+.input-btn {
+   margin-bottom: 20px !important;
+}
+
+.wpcf7 .wpcf7-mail-sent-ok {
+   display: none !important;
+}
+
+.wpcf7 span.wpcf7-not-valid-tip {
+   color: yellow;
+}
+.wpcf7 .wpcf7-validation-errors {
+   display: none !important;
+}
+
+p {
+   margin-bottom: 0 !important;
+}
+
+* {
+   outline: 0 !important;
+}
+
+.elementor-widget {
+   margin-bottom: 0 !important;
+}
+
+.wpcf7-response-output {
+   border-color: #000 !important;
+   color: black !important;
+}
+
+::-webkit-input-placeholder {
+   color: #666;
+}
+::-moz-placeholder {
+   color: #666;
+} /* Firefox 19+ */
+:-moz-placeholder {
+   color: #666;
+} /* Firefox 18- */
+:-ms-input-placeholder {
+   color: #666;
+}
+
+input::-webkit-input-placeholder {
+   text-indent: 0px;
+   transition: text-indent 0.6s ease;
+}
+input::-moz-placeholder {
+   text-indent: 0px;
+   transition: text-indent 0.6s ease;
+}
+input:-moz-placeholder {
+   text-indent: 0px;
+   transition: text-indent 0.6s ease;
+}
+input:-ms-input-placeholder {
+   text-indent: 0px;
+   transition: text-indent 0.6s ease;
+}
+input:focus::-webkit-input-placeholder {
+   text-indent: 600px;
+   transition: text-indent 0.6s ease;
+}
+input:focus::-moz-placeholder {
+   text-indent: 600px;
+   transition: text-indent 0.6s ease;
+}
+input:focus:-moz-placeholder {
+   text-indent: 600px;
+   transition: text-indent 0.6s ease;
+}
+input:focus:-ms-input-placeholder {
+   text-indent: 600px;
+   transition: text-indent 0.6s ease;
+}
+
+.progress-bar div {
+   height: 10px;
+}
+
+#quiz {
+   padding: 20px;
+}
+
+.box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Montserrat", sans-serif;
+   box-shadow: 2px 2px 40px rgba(1, 1, 1, 0.25);
+   background-color: #fff;
+}
+
+.questions {
+   margin: 30px 10px;
+}
+
+.btn-left {
+   position: absolute;
+   top: -45px;
+   right: 50px;
+   z-index: 100;
+   font-size: 24px;
+   font-weight: 900;
+   background: transparent;
+   color: #000 !important;
+   transition: 500ms;
+   border: none !important;
+}
+
+.btn-left:hover {
+   color: #999 !important;
+   transition: 500ms;
+}
+
+.btn-right {
+   position: absolute;
+   top: -45px;
+   right: 0;
+   z-index: 100;
+   font-size: 24px;
+   font-weight: 900;
+   background: transparent;
+   color: #000 !important;
+   border: none !important;
+}
+
+.btn-right:hover {
+   color: #999 !important;
+   transition: 500ms;
+}
+
+input,
+textarea {
+   outline: none !important;
+}
+input:active,
+textarea:active {
+   outline: none !important;
+}
+:focus {
+   outline: none !important;
+}
+textarea {
+   resize: none !important;
+}
+textarea {
+   resize: vertical !important;
+}
+textarea {
+   resize: horizontal !important;
+}
+
+.questions_step1,
+.questions_step4 {
+   position: relative;
+   z-index: 5;
+   width: 210px;
+   height: 260px;
+   transition: 500ms;
+   cursor: pointer;
+   margin: 15px 15px 25px 15px;
+   overflow: hidden;
+}
+
+.questions_step1:hover {
+   transition: 500ms;
+   box-shadow: 0 3px 15px rgba(1, 1, 1, 0.55);
+}
+
+.questions_step1 p {
+   color: #000;
+   font-family: "Montserrat", sans-serif;
+   width: 210px;
+   background-color: rgba(255, 255, 255, 0.9);
+   padding: 10px 0 30px;
+   position: absolute;
+   bottom: -20px;
+   transition: 500ms;
+   animation: zoomIn 1s;
+}
+
+.btn-none {
+   display: none;
+   position: absolute;
+   transition: 500ms;
+}
+
+.btn-none-check {
+   cursor: pointer;
+   font-size: 14px;
+   display: block;
+   animation: zoomIn 1s;
+   transition: 500ms;
+   border: none !important;
+   box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn-none-check:hover {
+   color: #fff !important;
+   background-color: blue;
+}
+
+.step1 {
+   animation: zoomIn 1s;
+}
+
+.step2,
+.step3,
+.step4,
+.step5,
+.step6,
+.step7 {
+   display: none;
+   animation: zoomIn 1s;
+}
+
+.type4 {
+   cursor: pointer;
+   transition: 500ms;
+   padding: 20px;
+   border: 1px #b6d4f1 solid;
+   margin: 5px 0;
+   width: 100%;
+   border-radius: 6px;
+}
+
+.type4 span {
+   position: relative;
+   top: -1px;
+   left: 5px;
+}
+
+.type4:hover {
+   background-color: #ccccff;
+   transition: 500ms;
+}
+
+.type4-check {
+   background-color: #ccccff;
+}
+
+.input1 {
+   width: 100% !important;
+   font-family: "Montserrat", sans-serif;
+   background-color: transparent !important;
+   border-top: none !important;
+   border-right: none !important;
+   border-left: none !important;
+   border-radius: 0 !important;
+   border-bottom: 1px #000 solid !important;
+   color: #000 !important;
+   padding: 10px;
+   transition: 500ms;
+   margin-bottom: 7px !important;
+}
+
+.active-block {
+   background-color: blue !important;
+   color: #fff !important;
+   transition: 500ms;
+}
+
+.my-small {
+   font-size: 12px;
+}
+
+.h2 {
+   padding: 150px 0;
+}

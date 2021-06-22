@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="/css/animate.css" />
+      <link rel="stylesheet" href="/slick/slick.css" />
+      <link rel="stylesheet" href="/css/main.css" />
+      <link rel="stylesheet" href="/css/buttons.css" />
+
+      <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+   </head>
+   <body>
+      <!--Информационная модаль ошибки -->
+      <div
+         id="modal-1"
+         class="modal animated slideInDown"
+         tabindex="-1"
+         role="dialog"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 id="title" class="modal-title">Ошибка</h5>
+                  <button
+                     type="button"
+                     class="close"
+                     data-dismiss="modal"
+                     aria-label="Close"
+                  >
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p id="error">Выберите один из вариантов!</p>
+               </div>
+               <div class="modal-footer"></div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container-fluid">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-3 text-center box">
+                  <p id="bonus">БОНУС</p>
+               </div>
+               <div id="quiz" class="col-sm-9">
+                  <div class="progress">
+                     <div
+                        class="
+                           progress-bar
+                           progress-bar-striped
+                           progress-bar-animated
+                           bg-blue
+                        "
+                        role="progressbar"
+                        aria-valuenow="11"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 0%"
+                     ></div>
+                  </div>
+
+                  <div class="step1">
+                     <div class="col-sm-12">
+                        <p class="questions">
+                           <span class="number">1</span>/6 Какой тип сайта Вам
+                           нужен?
+                        </p>
+                     </div>
+
+                     <section class="autoplay slider text-center">
+                        <div class="questions_step1">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/sait-vizitka.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Сайт визитка</p>
+                        </div>
+                        <div class="questions_step1">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/site-katalog.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Сайт каталог</p>
+                        </div>
+                        <div class="questions_step1">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/lending-page.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Лендинг</p>
+                        </div>
+                        <div class="questions_step1">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/site-company.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Сайт компании</p>
+                        </div>
+                        <div class="questions_step1">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/site-maket.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Другое</p>
+                        </div>
+                     </section>
+
+                     <div class="col-sm-12 text-center">
+                        <a
+                           id="btn1"
+                           href="#"
+                           class="preview-block__btn custom-btn"
+                           ><span>Следующий вопрос</span></a
+                        >
+                     </div>
+                  </div>
+
+                  <div class="step2">
+                     <div class="col-sm-12">
+                        <p class="questions">
+                           <span class="number">2</span>/6 Сфера деятельности
+                           вашей компании?
+                        </p>
+                     </div>
+
+                     <div class="row" style="margin: 30px 0">
+                        <div class="col-sm-6 text-left">
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Товары в розницу"
+                              /><span>Сфера услуг</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Товары оптом"
+                              /><span>Производство товаров</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Строительство"
+                              /><span>Розничная торговля</span>
+                           </div>
+                        </div>
+
+                        <div class="col-sm-6 text-left">
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Инфобизнес"
+                              /><span>Оптовая торговля</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Окна, кухни, шкафы и подобное"
+                              /><span>Доставка</span>
+                           </div>
+                           <div class="type4 type-input" style="padding: 6px">
+                              <input
+                                 id="variant2"
+                                 type="text"
+                                 name="karta5"
+                                 class="input1"
+                                 placeholder="Свой вариант"
+                              />
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-sm-6 text-center">
+                           <a
+                              id="btn-back2"
+                              href="#"
+                              class="preview-block__btn custom-btn"
+                              ><span>Назад</span></a
+                           >
+                        </div>
+
+                        <div class="col-sm-6 text-center">
+                           <a
+                              id="btn2"
+                              href="#"
+                              class="preview-block__btn custom-btn"
+                              ><span>Следующий вопрос</span></a
+                           >
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="step3">
+                     <div class="col-sm-12">
+                        <p class="questions">
+                           <span class="number">3</span>/6 Для наполнения сайта
+                           есть:
+                        </p>
+                     </div>
+
+                     <div class="row" style="margin: 30px 0">
+                        <div class="col-sm-6 text-left">
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Товары в розницу"
+                              /><span>Тексты</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Товары оптом"
+                              /><span>Картинки</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Строительство"
+                              /><span>Видео</span>
+                           </div>
+                        </div>
+
+                        <div class="col-sm-6 text-left">
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Инфобизнес"
+                              /><span>Макет</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Окна, кухни, шкафы и подобное"
+                              /><span>Ничего</span>
+                           </div>
+                           <div class="type4 type-input" style="padding: 6px">
+                              <input
+                                 id="variant3"
+                                 type="text"
+                                 name="karta5"
+                                 class="input1"
+                                 placeholder="Свой вариант"
+                              />
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-sm-6 text-center">
+                           <a
+                              id="btn-back3"
+                              href="#"
+                              class="preview-block__btn custom-btn"
+                              ><span>Назад</span></a
+                           >
+                        </div>
+
+                        <div class="col-sm-6 text-center">
+                           <a
+                              id="btn3"
+                              href="#"
+                              class="preview-block__btn custom-btn"
+                              ><span>Следующий вопрос</span></a
+                           >
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="step4">
+                     <div class="col-sm-12">
+                        <p class="questions">
+                           <span class="number">4</span>/6 Какой дизайн сайта
+                           вам нужен?
+                        </p>
+                     </div>
+                     <section class="autoplay slider text-center">
+                        <div class="questions_step4">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/site-unic.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Уникальный</p>
+                        </div>
+                        <div class="questions_step4">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/site-sales.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Продающий</p>
+                        </div>
+                        <div class="questions_step4">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/site-template.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Шаблонный</p>
+                        </div>
+                        <div class="questions_step4">
+                           <button class="btn-none">СНЯТЬ ВЫБОР</button>
+                           <img
+                              src="/img/dont-known.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <div class="circle-icon"></div>
+                           <p>Нужна консультация</p>
+                        </div>
+                     </section>
+
+                     <div class="col-sm-12 text-center">
+                        <a
+                           id="btn4"
+                           href="#"
+                           class="preview-block__btn custom-btn"
+                           ><span>Следующий вопрос</span></a
+                        >
+                     </div>
+                  </div>
+
+                  <div class="step5">
+                     <div class="col-sm-12">
+                        <p class="questions">
+                           <span class="number">5</span>/6 Вопрос номер один
+                        </p>
+                     </div>
+
+                     <div class="row" style="margin: 30px 0">
+                        <div class="col-sm-6 text-left">
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Товары в розницу"
+                              /><span>Товары в розницу</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Товары оптом"
+                              /><span>Товары оптом</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Строительство"
+                              /><span>Строительство</span>
+                           </div>
+                        </div>
+
+                        <div class="col-sm-6 text-left">
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Инфобизнес"
+                              /><span>Инфобизнес</span>
+                           </div>
+                           <div class="type4">
+                              <input
+                                 type="radio"
+                                 name="karta"
+                                 class="karta"
+                                 value="Окна, кухни, шкафы и подобное"
+                              /><span>Окна, кухни, шкафы и подобное</span>
+                           </div>
+                           <div class="type4 type-input" style="padding: 6px">
+                              <input
+                                 id="variant5"
+                                 type="text"
+                                 name="karta5"
+                                 class="input1"
+                                 placeholder="Свой вариант"
+                              />
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-12 text-center">
+                        <a
+                           id="btn5"
+                           href="#"
+                           class="preview-block__btn custom-btn"
+                           ><span>Следующий вопрос</span></a
+                        >
+                     </div>
+                  </div>
+
+                  <div class="step6">
+                     <div class="col-sm-12">
+                        <p class="questions">Оставьте Ваши контакты</p>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6" style="padding-bottom: 20px">
+                           <div class="row">
+                              <div class="col-sm-6">
+                                 <input
+                                    id="name-1"
+                                    class="input1"
+                                    type="text"
+                                    placeholder="Ваше имя"
+                                 />
+                              </div>
+                              <div class="col-sm-6">
+                                 <input
+                                    id="phone-1"
+                                    class="input1"
+                                    type="text"
+                                    placeholder="Ваш телефон"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3"></div>
+
+                        <div class="col-sm-12 text-center">
+                           <a
+                              id="btn6"
+                              href="#"
+                              class="preview-block__btn custom-btn"
+                              ><span>Отправить заявку</span></a
+                           >
+                           <p class="my-small">
+                              Я соглашаюсь с
+                              <a target="_blank" href="/politika.pdf"
+                                 >Политикой конфендициальности</a
+                              >
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="step7">
+                     <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6" style="padding-bottom: 20px">
+                           <h2 class="h2">СПАСИБО ЗА ЗАЯВКУ!</h2>
+                        </div>
+                        <div class="col-sm-3"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="slick/slick.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/action.js"></script>
+   </body>
+</html>
