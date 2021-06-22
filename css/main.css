@@ -206,10 +206,11 @@ textarea {
    box-shadow: 0 3px 15px rgba(1, 1, 1, 0.55);
 }
 
-.questions_step1 p {
+.questions_step1 p,
+.questions_step4 p {
    color: #000;
    font-family: "Montserrat", sans-serif;
-   width: 210px;
+   width: 100%;
    background-color: rgba(255, 255, 255, 0.9);
    padding: 10px 0 30px;
    position: absolute;
