@@ -126,7 +126,7 @@ input:focus:-ms-input-placeholder {
    justify-content: center;
    font-family: "Montserrat", sans-serif;
    box-shadow: 2px 2px 40px rgba(1, 1, 1, 0.25);
-   background-color: #fff;
+   background: url("/img/bonus.jpg") center center/cover no-repeat;
 }
 
 .questions {
@@ -193,7 +193,7 @@ textarea {
 .questions_step4 {
    position: relative;
    z-index: 5;
-   width: 210px;
+   width: 260px;
    height: 260px;
    transition: 500ms;
    cursor: pointer;

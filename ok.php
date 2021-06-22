@@ -51,7 +51,7 @@ try{
     $mail->CharSet="UTF-8";  // Кодировка обмена сообщениями с SMTP сервером
     $mail->Username   = $__smtp['username'];  // Имя пользователя на SMTP сервере
     $mail->Password   = $__smtp['password'];  // Пароль от учетной записи на SMTP сервере
-    $mail->AddAddress('direkt0001@yandex.ru', 'Разработчик');  // Адресат почтового сообщения
+    $mail->AddAddress('rva7171@gmail.com', 'Разработчик');  // Адресат почтового сообщения
     $mail->AddReplyTo($__smtp['addreply'], 'First Last');  // Альтернативный адрес для ответа
     $mail->SetFrom($__smtp['username'], $__smtp['mail_title']);  // Адресант почтового сообщения
     $mail->Subject = htmlspecialchars($__smtp['mail_title']);  // Тема письма
