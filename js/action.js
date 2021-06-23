@@ -262,8 +262,6 @@ jQuery("#btn2").on("click", function () {
          question_2 = myarr;
       }
 
-      jQuery("#bonus").html(question_2);
-
       jQuery(".step2").hide();
       jQuery(".step3").show();
 
@@ -348,7 +346,8 @@ jQuery("#btn4").on("click", function () {
 });
 
 jQuery("#btn5").on("click", function () {
-   let variant5 = jQuery("#variant5").val();
+   let variant5 = jQuery("#variant5").val(),
+      question_val = "Подарок не нужен";
 
    if (logic) {
       jQuery(".progress-bar").html("100%");
@@ -358,6 +357,12 @@ jQuery("#btn5").on("click", function () {
          question_5 = variant5;
       } else {
          question_5 = myarr;
+      }
+
+      if (question_5 != question_val) {
+         jQuery("#bonus").html("Ваш подарок </br>" + question_5);
+      } else {
+         jQuery("#bonus").html(question_5);
       }
 
       jQuery(".step5").hide();
